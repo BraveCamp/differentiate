@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style type="text/css">
+    td.buttonformat {
+        margin:  0  2cm 0cm;
+    }
+    table.tableborder{
+        border-spacing: 2cm;
+        border-collapse: 2cm;
+    }
+
+    ]
+</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Informational Impact</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!--above left below-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Differentiate</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../asha/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Impact</a>
+                    </li>
+                    <li>
+                        <a href="../isabella/about.html">About</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Page Image Background Carousel Header -->
+    
+    
+        <!-- Wrapper for Slides -->
+       <!-- <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+            <!--    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+        <!--    </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+            <!--    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div> 
+        <!--    <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+             <!--   <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Controls -->
+     <!--   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header> -->
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                
+            </div>
+        </div>
+
+
+
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+               <h1> Survey </h1>
+            </div>
+        </div>
+            <!-- /.row -->
+        
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    <div style="margin-left: 2cm">
+        <table class="tableborder big" border="1">
+        <th colspan="2" class="looks"> What's your ethnicity?</th>
+            <tr>
+                <td class="buttonformat" >
+                    <button class="buttoncolor" onclick="myFunction1()">Hispanic</button>
+                </td>
+                <td id="descriptionH"></td>
+                
+            </tr>
+            <tr>
+                <td class="buttonformat"> 
+                    <button  class="buttoncolor" onclick="myFunction2()"> African American</button>
+                </td>
+                <td id="descriptionAA"></td>
+            </tr>
+            <tr>
+                <td class="buttonformat">
+                    <button  class="buttoncolor" onclick="myFunction3()">Indian</button>
+                <td id="descriptionI"></td>
+            </tr>
+            <tr>
+                <td class="buttonformat"> 
+                    <button  class="buttoncolor" onclick="myFunction4()"> White </button>
+                <td id="descriptionW"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td class="buttonformat"> 
+                    <button  class="buttoncolor" onclick="myFunction5()"> Other </button>
+                <td id="descriptionO"></td>
+            </tr>
+        </table>
+    </div>
+    <p>
+    <div style="margin-left: 2cm">
+        <table class="tableborder big" border="1">
+        <th colspan="2" class="looks"> What's your job?</th>
+            <tr>
+                <td class="buttonformat" >
+                    <button class="buttoncolor" onclick="myFunction6()">Model</button>
+                </td>
+                <td id="descriptionM"></td>
+                
+            </tr>
+            <tr>
+                <td class="buttonformat"> 
+                    <button class="buttoncolor" onclick="myFunction7()">Police</button>
+                </td>
+                <td id="descriptionP"></td>
+            </tr>
+            <tr>
+                <td class="buttonformat">
+                    <button class="buttoncolor" onclick="myFunction8()"">Lawyer </button>
+                <td id="descriptionL"></td>
+            </tr>
+            <tr>
+                <td class="buttonformat"> 
+                    <button class="buttoncolor" onclick="myFunction9()"> Teacher </button>
+                <td id="descriptionT"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td class="buttonformat"> 
+                    <button class="buttoncolor" onclick="myFunction10()"> Other </button>
+                <td id="descriptionOO"></td>
+            </tr>
+        </table>
+    </div>
+<script>
+
+    function myFunction1() {
+    if (document.getElementById('descriptionH').innerHTML=='All of them become maids, Your men are all mechanics. You sit around and eat tacos all day and then party until the morning.'){
+        document.getElementById('descriptionH').innerHTML='';
+    }
+    else{document.getElementById('descriptionH').innerHTML='All of them become maids, Your men are all mechanics. You sit around and eat tacos all day and then party until the morning.';}
+   }
+
+   function myFunction2() {
+    if (document.getElementById('descriptionAA').innerHTML=='You love eating chicken,spagghetti always singing like your anybody in history.Of couse you look like just like somebody.You come from a low-income. You smell like chicken or coco butter.'){
+        document.getElementById('descriptionAA').innerHTML='';
+    }
+    else{document.getElementById('descriptionAA').innerHTML='You love eating chicken,spagghetti always singing like your anybody in history.Of couse you look like just like somebody.You come from a low-income. You smell like chicken or coco butter.';}
+   }
+
+   function myFunction3() {
+    if (document.getElementById('descriptionI').innerHTML=='you should be good at math. You only eat spicy foods. You smell like curry'){
+        document.getElementById('descriptionI').innerHTML='';
+    }
+    else{document.getElementById('descriptionI').innerHTML='you should be good at math. You only eat spicy foods. You smell like curry';}
+   }
+
+   function myFunction4() {
+    if (document.getElementById('descriptionW').innerHTML=='You have NO rhythm. When you get mad nobody should talk to you. cant dress nice and have a bad smell.'){
+        document.getElementById('descriptionW').innerHTML='';
+    }
+    else{document.getElementById('descriptionW').innerHTML='You have NO rhythm. When you get mad nobody should talk to you. cant dress nice and have a bad smell.';}
+   }
+
+   function myFunction5() {
+    if (document.getElementById('descriptionO').innerHTML=='Since you picked other that means nobody really care about you. You are just a nothing. You would not get any where.'){
+        document.getElementById('descriptionO').innerHTML='';
+    }
+    else{document.getElementById('descriptionO').innerHTML='Since you picked other that means nobody really care about you. You are just a nothing. You would not get any where.';}
+   }
+
+   function myFunction6() {
+    if (document.getElementById('descriptionM').innerHTML=='You are skinny and dont eat and always on an diet and think you are ms. or mr. Perfect'){
+        document.getElementById('descriptionM').innerHTML='';
+    }
+    else{document.getElementById('descriptionM').innerHTML='You are skinny and dont eat and always on an diet and think you are ms. or mr. Perfect';}
+   }
+
+   function myFunction7() {
+    if (document.getElementById('descriptionP').innerHTML=='You would be a person that hurt others and not care about the important things about the neighborhood or your area. You would sit around and eat donuts and drink coffee all day.'){
+        document.getElementById('descriptionP').innerHTML='';
+    }
+    else{document.getElementById('descriptionP').innerHTML='You would be a person that hurt others and not care about the important things about the neighborhood or your area. You would sit around and eat donuts and drink coffee all day.';}
+   }
+
+   function myFunction8() {
+    if (document.getElementById('descriptionL').innerHTML=='You are a lier and do not care about your clients that you have to help in court.'){
+        document.getElementById('descriptionL').innerHTML='';
+    }
+    else{document.getElementById('descriptionL').innerHTML='You are a lier and do not care about your clients that you have to help in court.';}
+   }
+
+   function myFunction9() {
+    if (document.getElementById('descriptionT').innerHTML=='You would be crying by your third day working with the kids. You would not make it in the buisness'){
+        document.getElementById('descriptionT').innerHTML='';
+    }
+    else{document.getElementById('descriptionT').innerHTML='You would be crying by your third day working with the kids. You would not make it in the buisness';}
+   }
+
+   function myFunction10() {
+    if (document.getElementById('descriptionOO').innerHTML=='Since you picked other that means who really cares about your choice. You are just a nothing. You would not get any where.'){
+        document.getElementById('descriptionOO').innerHTML='';
+    }
+    else{document.getElementById('descriptionOO').innerHTML='Since you picked other that means who really cares about your choice. You are just a nothing. You would not get any where.';}
+   }
+</script>
+
+</body>
+
+</html>
