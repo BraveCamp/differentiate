@@ -48,10 +48,10 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="samaree/survey.html">Impact</a>
+                        <a href="#chart_div">Stereotypes</a>
                     </li>
                     <li>
-                        <a href="isabella/about.html">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
                         
@@ -109,7 +109,7 @@
                 <!-- Set the fourth background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('consquences.jpg');"></div>
                 <div class="carousel-caption">
-                    <h1>Consquences</h1>
+                    <h1>Consequences</h1>
                     <div class="capt">
                     	<h4>One person's action affects everyone else</h4>
                     </div>
@@ -148,16 +148,15 @@
     		</div>
     	</div>
 
-
     </div>
+    <hr>
+    <div><h2 style="text-align:center;"">Stereotypes by Countries</h2></div>
+	<div id="chart_div" style=""></div>
+<div>
+<p>This is to educate you and make you realize the stereotypes being used unconsiouly. Remember these when you want to assoicate a stereotype and remember the consequences it will cause if you use it. </p>
 <hr>
 
-   
 
-
-
-        
-        <hr>
 
         <!-- Footer -->
         <footer>
@@ -170,8 +169,34 @@
         </footer>
 
     </div>
-    <!-- /.container -->
-    <!-- Contact form -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script>
+    google.charts.load('current', { 'packages': ['map'] });
+    google.charts.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Country', 'Population'],
+        ['China', 'China: All Asians are goodt at math. All Asians like to eat rice and drive slow.'],
+        ['India', 'India: All indians are cheap and smell like curry.'],
+        ['US', 'US: All white Americans are obese, lazy, and dim-witted. '],
+        ['Brazil', 'South America: All south Americans speak spanish, do drugs, and play soccer.'],
+        ['Pakistan', 'Pakistan: All Arabs and Muslims are terrorists.'],
+        ['Africa', 'Africa: All Africans have aids.'],
+        ['Russia', 'Russia: All the Russians are spies.'],
+        // ['Europe', 'Europe:   '],
+        ['Canada', 'Canada: All Canadians are nice and use maple srupy on everything. '],
+        ['Austraila', 'Austraila: All Australians eat vegemite ']
+      ]);
+
+    var options = { showTip: true };
+
+    var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+    map.draw(data, options);
+  };
+  </script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="validator.js"></script>
